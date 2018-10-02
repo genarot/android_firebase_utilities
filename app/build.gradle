@@ -35,9 +35,31 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
 
-    implementation 'com.android.support:design:26.0.2'
+    implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:appcompat-v7:26.0.2'
 
     // Displaying images
-    implementation 'com.github.bumptech.glide:glide:3.6.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    //Core para analitycs
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+
+    //Uso de la base de datos
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+
+    //Uso de la authenticacion de Firebase
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+
+    //Libreria con implementacion de la autenticacion
+    implementation 'com.firebaseui:firebase-ui-auth:4.2.0'
+
+    //Libreria para almacenamiento en la nube
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+
+    //Libreria para envio y recepcion de notificaciones
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+
+    //Libreria para la configuracion remota
+    implementation 'com.google.firebase:firebase-config:16.0.0'
 }
+apply plugin: 'com.google.gms.google-services'
